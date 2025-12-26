@@ -3,6 +3,7 @@ const express = require("express");
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 const main = require("./src/service/ai.service")
+const port = process.env.PORT || 4000 
 
 const app = express();
 const httpServer = createServer(app);
