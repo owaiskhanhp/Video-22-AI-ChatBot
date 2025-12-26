@@ -20,7 +20,7 @@ function App() {
   }, [messages, isLoading]); // Scroll when loading starts too
 
   useEffect(() => {
-    const socketInstance = io("http://localhost:3000");
+    const socketInstance = io("https://ai-chatbot-v1w1.onrender.com");
     setSocket(socketInstance);
 
     socketInstance.on("ai-message-response", (data) => {
